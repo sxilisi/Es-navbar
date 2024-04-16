@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      .navbar {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1px 2px;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .navbar li {
+        margin-right: 1px;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .navbar button {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      .navbar button:hover {
+        background-color: #00cc00;
+        color: #fff;
+      }
+
+      .search-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .search-container input[type="text"] {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .search-container button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 7px 10px;
+        border-radius: 5px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div>
+        <h1>Navbar</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Link</a></li>
+          <li><button>Dropdown</button></li>
+          <li><button disabled>Disabled</button></li>
+        </ul>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Search" />
+        <button>Search</button>
+      </div>
+    </nav>
+  </body>
+</html>
